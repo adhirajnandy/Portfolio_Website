@@ -62,6 +62,16 @@ const Navbar = () => {
           </li>
           <li>
             <Link
+              to="experience"
+              smooth={true}
+              duration={500}
+              className="hover:text-cyan-500 transition-colors duration-300 transform hover:scale-105"
+            >
+              Experience
+            </Link>
+          </li>
+          <li>
+            <Link
               to="contact"
               smooth={true}
               duration={500}
