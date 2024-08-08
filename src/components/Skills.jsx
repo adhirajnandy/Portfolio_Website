@@ -1,4 +1,25 @@
 import React from "react";
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaJs,
+  FaReact,
+  FaPython,
+  FaGitAlt,
+} from "react-icons/fa";
+import { SiTailwindcss, SiMysql, SiCplusplus } from "react-icons/si";
+
+const skills = [
+  { name: "HTML", icon: <FaHtml5 size={40} color="#E44D26" /> },
+  { name: "CSS", icon: <FaCss3Alt size={40} color="#1572B6" /> },
+  { name: "JavaScript", icon: <FaJs size={40} color="#F7DF1E" /> },
+  { name: "React", icon: <FaReact size={40} color="#61DAFB" /> },
+  { name: "Tailwind", icon: <SiTailwindcss size={40} color="#38B2AC" /> },
+  { name: "MySQL", icon: <SiMysql size={40} color="#4479A1" /> },
+  { name: "Python", icon: <FaPython size={40} color="#306998" /> },
+  { name: "C++", icon: <SiCplusplus size={40} color="#00599C" /> },
+  { name: "Git & GitHub", icon: <FaGitAlt size={40} color="#F05032" /> },
+];
 
 const Skills = () => {
   return (
@@ -18,22 +39,13 @@ const Skills = () => {
           </p>
         </div>
         <div className="flex flex-wrap justify-center gap-6 md:gap-8">
-          {[
-            "HTML",
-            "CSS",
-            "JavaScript",
-            "React",
-            "Tailwind",
-            "MySQL",
-            "Python",
-            "C++",
-            "Git & GitHub",
-          ].map((skill, index) => (
+          {skills.map((skill, index) => (
             <div
               key={index}
-              className="shadow-lg shadow-[#040c16] hover:scale-105 transition-transform duration-300 p-6 rounded-lg bg-[#1e2a38] flex items-center justify-center"
+              className="shadow-lg shadow-[#040c16] hover:scale-105 transition-transform duration-300 p-6 rounded-lg bg-[#1e2a38] flex flex-col items-center justify-center"
             >
-              <p className="text-xl font-medium">{skill}</p>
+              <div className="mb-4">{skill.icon}</div>
+              <p className="text-xl font-medium">{skill.name}</p>
             </div>
           ))}
         </div>

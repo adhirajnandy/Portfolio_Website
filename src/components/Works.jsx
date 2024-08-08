@@ -17,11 +17,11 @@ const Works = () => {
           </p>
         </div>
         {/* Container */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-10">
           {/* Grid Item */}
           <div
             style={{ backgroundImage: `url(${AMS})` }}
-            className="shadow-lg shadow-[#040c16] group rounded-lg overflow-hidden flex justify-center items-center mx-auto bg-cover bg-center h-[300px] transition-transform transform hover:scale-105"
+            className="shadow-lg shadow-[#040c16] group rounded-lg overflow-hidden flex justify-center items-center bg-cover bg-center h-[300px] transition-transform transform hover:scale-105"
           >
             {/* Hover Effects */}
             <div className="opacity-0 group-hover:opacity-100 flex flex-col justify-center items-center p-6 text-center bg-[#0a192f] bg-opacity-75 rounded-lg w-full h-full transition-opacity duration-300">
@@ -30,7 +30,7 @@ const Works = () => {
                 An Application Tracking web application built with Next and
                 MongoDB.
               </p>
-              <div className="flex justify-center gap-4">
+              <div className="flex flex-col gap-4">
                 <a
                   href="https://app-ms.vercel.app/"
                   target="_blank"
@@ -54,7 +54,7 @@ const Works = () => {
           </div>
           <div
             style={{ backgroundImage: `url(${Ecom})` }}
-            className="shadow-lg shadow-[#040c16] group rounded-lg overflow-hidden flex justify-center items-center mx-auto bg-cover bg-center h-[300px] transition-transform transform hover:scale-105"
+            className="shadow-lg shadow-[#040c16] group rounded-lg overflow-hidden flex justify-center items-center bg-cover bg-center h-[300px] transition-transform transform hover:scale-105"
           >
             {/* Hover Effects */}
             <div className="opacity-0 group-hover:opacity-100 flex flex-col justify-center items-center p-6 text-center bg-[#0a192f] bg-opacity-75 rounded-lg w-full h-full transition-opacity duration-300">
@@ -64,7 +64,7 @@ const Works = () => {
               <p className="mb-4 text-base">
                 A full-featured eCommerce platform built with the MERN stack.
               </p>
-              <div className="flex justify-center gap-4">
+              <div className="flex flex-col gap-4">
                 <a
                   href="https://easy-shop-033h.onrender.com/"
                   target="_blank"
@@ -88,7 +88,7 @@ const Works = () => {
           </div>
           <div
             style={{ backgroundImage: `url(${Movie})` }}
-            className="shadow-lg shadow-[#040c16] group rounded-lg overflow-hidden flex justify-center items-center mx-auto bg-cover bg-center h-[300px] transition-transform transform hover:scale-105"
+            className="shadow-lg shadow-[#040c16] group rounded-lg overflow-hidden flex justify-center items-center bg-cover bg-center h-[300px] transition-transform transform hover:scale-105"
           >
             {/* Hover Effects */}
             <div className="opacity-0 group-hover:opacity-100 flex flex-col justify-center items-center p-6 text-center bg-[#0a192f] bg-opacity-75 rounded-lg w-full h-full transition-opacity duration-300">
@@ -98,7 +98,7 @@ const Works = () => {
               <p className="mb-4 text-base">
                 A movie discovery app with advanced search features.
               </p>
-              <div className="flex justify-center gap-4">
+              <div className="flex flex-col gap-4">
                 <a
                   href="https://moviehive-adhiraj.netlify.app/"
                   target="_blank"
