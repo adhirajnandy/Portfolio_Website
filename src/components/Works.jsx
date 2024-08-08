@@ -5,8 +5,8 @@ import Movie from "../assets/Movie.png";
 
 const Works = () => {
   return (
-    <div name="work" className="w-full md:h-screen bg-[#0a192f] text-gray-300">
-      <div className="max-w-[1000px] mx-auto p-6 flex flex-col justify-center w-full h-full">
+    <div name="work" className="w-full bg-[#0a192f] text-gray-300 py-16">
+      <div className="max-w-[1200px] mx-auto px-6">
         <div className="text-center mb-12">
           <p className="text-4xl font-bold border-b-4 border-cyan-500 inline-block">
             Work
@@ -17,7 +17,7 @@ const Works = () => {
           </p>
         </div>
         {/* Container */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Grid Item */}
           <div
             style={{ backgroundImage: `url(${AMS})` }}
